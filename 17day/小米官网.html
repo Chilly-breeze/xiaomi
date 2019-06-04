@@ -1,0 +1,1915 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>小米官网</title>
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<link rel="shortcut icon" type="text/css" href="favicon.ico">
+	<style type="text/css">
+		@font-face {
+			  font-family: 'icomoon';
+			  src:  url('fonts/icomoon.eot?jkxebv');
+			  src:  url('fonts/icomoon.eot?jkxebv#iefix') format('embedded-opentype'),
+			    url('fonts/icomoon.ttf?jkxebv') format('truetype'),
+			    url('fonts/icomoon.woff?jkxebv') format('woff'),
+			    url('fonts/icomoon.svg?jkxebv#icomoon') format('svg');
+			  font-weight: normal;
+			  font-style: normal;
+		}
+		* {
+			margin:0;
+			padding:0;
+		}
+		html,
+		body {
+			height: 100%;
+		}
+		body {
+			color: #333;
+   			background-color: #f5f5f5;
+  			min-width: 1226px;
+			/*height: 9000px;*/
+		}
+		.fl {
+			float: left;
+		}
+		.fr {
+			float: right;
+		}
+		ul,ol{
+			list-style: none;
+		}
+		a {
+			text-decoration:none;
+		}
+		input {
+			border: 0;
+			outline:0;
+		}
+		.clearfix::after{
+			content: "";
+			height: 0;
+			clear: both;
+			display: block;
+			overflow: hidden;
+			visibility: hidden;
+		}
+		.w {
+			height: 100%;
+			width: 1228px;
+			margin: 0 auto;
+		}
+		i {
+			font-family: 'icomoon';
+			font-style: normal;
+		}
+		img {
+			display: block;
+		}
+		/*-----------------公共样式-----------------------*/
+
+
+
+		.header {
+			height: 40px;
+			background: #333;
+			overflow: hidden;
+		}
+		.d1 a{
+			display:inline-block;
+			height: 100%;
+			/*float: left;*/
+			font-size: 12px;
+			line-height: 40px;
+			color: #b0b0b0;
+		}
+		.header a:hover{
+			color: #f10215;
+		}
+		.d1 span{
+			margin: 0 6px;
+			color:#424242;
+		}
+		.d2 span{
+			margin: 0 6px;
+			color:#424242;
+		}
+		.d2{
+			line-height: 40px;
+			text-align: center;
+		}
+		.d2 a{
+			display: inline-block;
+			color: #b0b0b0;
+			font-size: 12px;
+		}
+		.d3 {
+			margin-left: 24px;
+			line-height: 40px;
+			font-size: 14px;
+			color: #898989;
+		}
+		/*header end*/
+
+		.nav {
+			padding: 22px 0;
+		}
+		.nav h1 {
+			text-indent: -9999px;
+			height: 56px;
+			width: 56px;
+			/*line-height: 56px;*/
+			vertical-align: middle;
+			background: url(images/1.png) no-repeat center center;
+			background-size: 100%;
+			float: left;
+		}
+		.nav a {
+			display: inline-block;
+			font-size: 16px;
+			line-height: 56px;
+			color: black;
+			vertical-align: middle;
+			margin-right: 20px;
+		}
+		.nav a:hover{
+			color: #f10215;
+		}
+		.nav .d4{
+			width: 293px;
+			height: 48px;
+			border: 1px solid #9999;
+		}
+		.d4 input[type="text"]{
+			width: 242px;
+			height: 48px;
+			float: left;
+			font-size: 18px;
+			padding:10px;
+			box-sizing: border-box;
+		}
+		.d4 input[type="button"]{
+			display: inline-block;
+			width: 50px;
+			height: 48px;
+			background: #666;
+			float: right;
+			transition: all .2s;
+			outline: 0;
+		}
+		.d4 input[type="button"]:hover {
+			background: #ff6700;
+			color: #fff;
+			cursor: pointer;
+		}
+		.d4 input[type="button"]{
+			font-family: "icomoon";
+			font-size: 16px;
+		}
+		/*-----------------nav end -------------*/
+		.banner {
+			max-width: 100%;
+			padding-bottom: 15px;
+			margin: 0 auto;
+			/*box-sizing: border-box;*/
+		}
+		.box {
+			width:1226px;
+			height: 460px;	
+			margin: 0 auto;
+			position: relative;
+			overflow: hidden;
+		}
+		.d5 {
+			width: 234px;
+			height: 100%;
+			padding:20px 0;
+			box-sizing: border-box;
+			background: #6666;
+			position: relative;
+/*			display: flex;
+			flex-direction: column;
+			justify-content: space-between;*/
+		}
+		.d5 li {
+			height: 40px;
+			padding: 0 20px;
+			box-sizing: border-box;
+			/*float: left;*/
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 28px;
+		}
+		.d5 li a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			font-size: 14px;
+			/*line-height: 14px;*/
+			line-height: 40px;
+			color: #fff;
+			float: left;
+		}
+		.d5 li span {
+			/*float: right;*/
+			line-height: 40px;
+			color: #fff;
+		}
+		.d5 li:hover{
+			cursor: pointer;
+			background: orange;
+		}
+		.d5 li:hover div{
+			display: block;
+		}
+		.d9 {
+			display: none;
+			width: 992px;
+			height: 460px;
+			background: #fff;
+			position: absolute;
+			top: 0;
+			left: 234px;
+			z-index: 1;
+			box-shadow: 0 5px 25px rgba(0,0,0,.3); 
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		/*-------------轮播图左边--------------*/
+
+
+
+		.d6 {
+			position: relative;
+			width: 992px;
+			height: 460px;
+			overflow: hidden;
+		}
+		.xiangkuang {
+			position: relative;
+			width: 992px;
+			height: 460px;
+			overflow: hidden;
+		}
+		.d6 ul {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 5000px;
+			height: 460px;
+		}
+		.d6 ul li {
+			float: left;
+			width: 992px;
+			width: 992px;
+			height: 460px;
+		}
+		.d6 ul li:nth-child(1){
+			background: url(images/2.jpg) no-repeat center center;
+			background-size: cover;
+
+		}
+		.d6 ul li:nth-child(2) {
+			background: url(images/3.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		.d6 ul li:nth-child(3) {
+			background: url(images/4.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		.d6 ul li:nth-child(4) {
+			background: url(images/5.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		.d6 ul li:nth-child(5) {
+			background: url(images/6.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		/*banner end*/
+		.main1 {
+			padding-bottom: 26px;
+			box-sizing: border-box;
+		}
+		.m1 {
+			display: flex;
+
+		}
+		.m11 {
+			width: 234px;
+			margin-right: 14px;
+			height: 170px;
+		}
+		.m11 ul {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.m11 ul li {
+			position: relative;
+			width: 79px;	
+			height: 85px;
+			flex-shrink: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			background: #5f5750;
+		}
+		.m11 ul li:nth-child(1)::after{
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 9px;
+			width: 1px;
+			height: 50px;
+			background: #999;
+
+		}
+		.m11 ul li:nth-child(4)::after{
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 9px;
+			width: 1px;
+			height: 50px;
+			background: #999;
+
+		}
+		.m11 ul li:nth-child(5)::after{
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 9px;
+			width: 1px;
+			height: 50px;
+			background: #999;
+
+		}
+		.m11 ul li:nth-child(1)::before{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 14px;
+			width: 50px;
+			height: 1px;
+			background:#999;
+			background-size: cover;
+
+		}
+		.m11 ul li:nth-child(3)::before{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 14px;
+			width: 50px;
+			height: 1px;
+			background:#999;
+			background-size: cover;
+
+		}
+			.m11 ul li:nth-child(2)::after{
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 9px;
+			width: 1px;
+			height: 50px;
+			background: #999;
+			/*background-size: cover;*/
+
+		}
+		.m11 ul li:nth-child(2)::before{
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 14px;
+			width: 50px;
+			height: 1px;
+			background:#999;
+			/*background-size: cover;*/
+
+		}
+		.m11 ul li:nth-child(2){
+			width: 77px;
+		}
+		.m11 ul li:nth-child(5){
+			width: 77px;
+		}
+		.m11 ul li:nth-child(6){
+			width: 77px;
+		}
+		.m11 ul li:nth-child(3){
+			width: 77px;
+		}
+		.m11 li i {
+			font-size: 26px;
+			margin-bottom: 12px;
+			color: #a2a7aa;
+			/*margin-bottom: */
+		}
+		.m11 li span {
+			font-size: 12px;
+			color: #cdcac8;		
+			padding-bottom: 22px;
+			box-sizing: border-box;
+		}
+		/*手标划过*/
+		.m11 li:hover span{
+			cursor: pointer;
+			/*background:#212020;*/
+			color: #fff;
+		}
+		.m11 li:hover i{
+			cursor: pointer;
+			/*background:#212020;*/
+			color: #fff;
+		}
+
+
+
+
+		.m12 {
+			margin-right: 14px;
+			width: 316px;
+			height: 170px;
+			background: url(images/7.png) no-repeat center center;
+		}
+		.m13 {
+			width: 316px;
+			margin-right: 16px;
+			height: 170px;
+			background: url(images/8.png) no-repeat center center;
+		}
+		.m14 {
+			width: 316px;
+			height: 170px;
+			background: url(images/9.png) no-repeat center center;
+		}
+
+
+
+		/*-----------main1 end---------------*/
+		.main2 {
+			padding-bottom: 42px;
+
+		}
+		.main2tu {
+			width: 100%;
+			height: 120px;
+			background: url(images/10.jpg);
+			background-size: cover;
+		}
+		/*--------------main2 end-----------------*/
+
+
+
+
+
+		.main3 {
+			padding-top: 38px;
+			padding-bottom: 43px;
+			background: #f5f5f5;
+		}
+		.main4 {
+			padding-bottom: 43px;
+			background: #f5f5f5;
+		}
+		.main4 h4 {
+			padding-top: 38px;
+		}
+		.main3 h4,.main4 h4 {
+			font-size: 22px;
+			line-height: 22px;
+			color: #333;
+			height:42px;
+		}
+
+
+
+
+
+		/*---------------公共样式------------*/
+		.d7 {
+			display: flex;
+			justify-content: space-between;
+		}
+		.d10 {
+			width: 978px;
+			height: 614px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.d8{
+			width: 232px;
+			height: 614px;
+			background: url(images/13.png) no-repeat;
+			background-size: cover;
+		}
+
+/*		.d11{
+			width: 232px;
+			height: 614px;
+			background: url(images/23.png) no-repeat;
+			background-size: cover;
+		}*/
+
+		.d7 .u1 {
+			display: flex;
+			/*flex-wrap: wrap;*/
+			justify-content: space-between;
+			width: 978px;
+			height: 302px;
+		}
+		.d7 .u2 {
+			display: flex;
+			/*flex-wrap: wrap;*/
+			justify-content: space-between;
+			width: 978px;
+			height: 302px;
+		}
+		.d7 .u1 li {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-end;
+			flex-shrink: 0;
+			margin-right: 12px;
+			width: 236px;
+			overflow: hidden;
+			height: 302px;
+			background: #fff;
+		}
+		.d8-d {
+			position: absolute;
+			top: 0;
+			left:50%;
+			padding: 0 5px;
+			width: 40px;
+			height: 15px;
+			transform: translateX(-50%);
+			font-size: 12px;
+			color:#fff;
+			background: #83c44e;
+			text-align: center;
+			line-height: 12px;
+			z-index: 3;
+		}
+		.d7 .u1 li:nth-child(4){
+			margin:0;
+		}
+		.d7 .u1 span {
+			padding-bottom: 36px;
+			line-height: 14px;
+			font-size: 14px;
+			color: orange;
+		}
+		.d7 .u1 li p {
+			padding-bottom: 20px;
+			font-size: 12px;
+			line-height: 12px;
+			color: #888;
+		}
+		.d7 .u1 li b {
+			font-size: 16px;
+			color: #333;
+			padding-bottom: 10px;
+		}
+		.d7 .u1 li:hover {
+			margin-bottom: 5px;
+			cursor: pointer;
+			margin-top: -5px;
+			box-shadow: 2px 0px 20px rgba(0,0,0,.4),-2px 0 20px rgba(0,0,0,.4);
+		}
+		.d7 .u2 li {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-end;
+			flex-shrink: 0;
+			margin-right: 12px;
+			width: 236px;
+			overflow: hidden;
+			height: 302px;
+			background: #fff;
+		}
+		.d8-d {
+			position: absolute;
+			top: 0;
+			left:50%;
+			padding: 0 5px;
+			width: 40px;
+			height: 15px;
+			transform: translateX(-50%);
+			font-size: 12px;
+			color:#fff;
+			background: #83c44e;
+			text-align: center;
+			line-height: 12px;
+			z-index: 3;
+		}
+		.d7 .u2 li:nth-child(4){
+			margin:0;
+		}
+		.d7 .u2 span {
+			padding-bottom: 36px;
+			line-height: 14px;
+			font-size: 14px;
+			color: orange;
+		}
+		.d7 .u2 li p {
+			padding-bottom: 20px;
+			font-size: 12px;
+			line-height: 12px;
+			color: #888;
+		}
+		.d7 .u2 li b {
+			font-size: 16px;
+			color: #333;
+			padding-bottom: 10px;
+		}
+		.d7 .u2 li:hover {
+			cursor: pointer;
+			margin-bottom: 5px;
+			margin-top: -5px;
+			box-shadow: 2px 0px 20px rgba(0,0,0,.4),-2px 0 20px rgba(0,0,0,.4);
+		}
+		/*---------可复制--------*/
+		.d11 {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		.u3,.u4 {
+			display: flex;
+			/*flex-wrap: wrap;*/
+			/*justify-content: space-between;*/
+		}
+		.u3 li,.u4 li{
+			position: relative;
+			flex-shrink: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-end;
+			width: 234px;
+			height: 302px;
+			margin-right: 14px;
+			background: #fff;
+			margin-bottom: 12px;
+		}
+		.u4 li {
+			margin-bottom: 0;
+		}
+		.u3 li:last-child{
+			margin:0;
+		}
+		.u4 li:last-child{
+			margin:0;
+		}
+		.d11 li span {
+			padding-bottom: 32px;
+			font-size: 14px;
+			color: orange;
+			line-height: 14px;
+		}
+		.d11 li b{
+			margin-bottom: 37px;
+			font-size: 14px;
+			line-height: 14px;
+		}
+		.u3 li img{
+			margin-bottom: 22px;
+		}
+		.u3 li:first-child img,.u4 li:first-child img{
+			margin-bottom: 0;
+		}
+		.u4 li:last-child{
+			display: flex;
+			flex-direction: column;
+		}
+		.u4 .d12 {
+			width: 233px;
+			height: 144px;
+			display: flex;
+			/*margin-bottom: 15px;*/
+			border-bottom: 15px solid #f5f5f5;
+		}
+		.u4 .d14 {
+			display: flex;
+			flex-direction: column;
+			margin-left: 28px;
+			margin-top: 44px;
+			width: 120px;
+		}
+		.d14 span:nth-child(1){
+			font-size: 14px;
+			color: #333;
+			line-height: 14px;
+			margin-bottom: 20px;
+			padding-bottom: 0;
+		}
+		 .u4 .d14 span:nth-child(2){
+			font-size: 12px;
+			color: orange;
+		}
+		.d15 {
+			margin-top: 44px;
+		}
+		.d13 {
+			display: flex;
+		}
+		.d14 {
+			display: flex;
+			flex-direction: column;
+			margin-left: 28px;
+			margin-top: 50px;
+		}
+		.d14 .s1 {
+			font-size: 16px;
+			color: #333;
+			margin-bottom: 5px;
+		}
+		.d14 .s2 {
+			font-size: 12px;
+			color: #666;
+		}
+		/*----------------main 4567 end-----------*/
+
+
+
+		.main8 {
+			padding-bottom: 40px;
+		}
+		.main8 h4 {
+			height: 40px;
+			font-size: 22px;
+			color: black;
+			font-weight: 500;
+		}
+		.main8 ul li {
+			width: 234px;
+			height: 301px;
+			float: left;
+			margin-right: 14px;
+			background: #fff;
+		}
+		.main8 ul li:last-child {
+			margin-right: 0;
+		}
+		.main8 li p {
+			font-size: 14px;
+			height: 30px;
+			text-align: center;
+		}
+		.main8 li .s3 {
+			display: block;
+			height: 30px;
+			font-size: 14px;
+			color: orange;
+			text-align: center;
+		}
+		.main8 li .s4 {
+			font-size: 14px;
+			color: #666;
+			display: block;
+			text-align: center;
+		}
+		/*---------------main8 end--------------*/
+		.main9 {
+			padding-bottom: 40px;
+		}
+		.main9 h4 {
+			font-size: 22px;
+			color: #333;
+			font-weight: 500;
+			height: 41px;
+		}
+		.main9 ul li {
+			width: 294px;
+			height: 414px;
+			float: left;
+			margin-right: 16px;
+			background: #fff;
+			overflow: hidden;
+		}
+		.main9 ul li:last-child {
+			margin-right: 0;
+		}
+		.main9 li .p2 {
+			width: 239px;
+			height: 65px;
+			text-overflow: ellipsis;
+			white-space:nowrap;
+			overflow: hidden;
+			margin-left: 30px;
+			margin-top: 30px;
+			line-height: 22px;
+			font-size: 14px;
+			color: black;
+		}
+		.main9 li .p1 {
+			margin-top: 18px;
+			margin-bottom: 30px;
+			margin-left: 30px;
+			font-size: 12px;
+			color: #ccc;
+			line-height: 12px;
+		}
+		.main9 li .s5 {
+			margin-left: 30px;
+			font-size: 14px;
+			color: black;
+		}
+		.main9 li .s5::after {
+			content: "";
+			display: inline-block;
+			height: 14px;
+			width: 1px;
+			background: #666;
+			margin: 0 15px;
+		}
+		.main9 li .s6 {
+			font-size: 14px;
+			color: orange;
+		}
+		/*-------------main9 end-----------*/
+
+
+		.main10 {
+			padding-bottom: 38px;
+		}
+		.main10 h4 {
+			font-size: 22px;
+			color: #333;
+			height: 40px;
+			font-weight: 500;
+		}
+		.main10 ul .l2 {
+			float: left;
+			border-top: 1px solid orange;
+			width: 296px;
+			height: 420px;
+			background: #fff;
+			margin-right: 12px;
+		}
+		.main10 ul .l3 {
+			float: left;
+			border-top: 1px solid #83c44e;
+			width: 296px;
+			height: 420px;
+			background: #fff;
+			margin-right: 12px;
+		}
+		.main10 ul .l4 {
+			float: left;
+			border-top: 1px solid #f33333;
+			width: 296px;
+			height: 420px;
+			background: #fff;
+			margin-right: 12px;
+		}
+		.main10 ul .l5 {
+			float: left;
+			border-top: 1px solid #829ff3;
+			width: 296px;
+			height: 420px;
+			background: #fff;
+			margin-right: 12px;
+		}
+
+		.main10 li:last-child {
+			margin-right: 0;
+		}
+		.main10 .s7 {
+			color: orange;
+			margin-top: 50px;
+			display: block;
+			height: 40px;
+			text-align:center;
+			font-size: 12px;
+		}
+		.main10 .s8 {
+			color: #83c44e;
+			margin-top: 50px;
+			display: block;
+			height: 40px;
+			text-align:center;
+			font-size: 12px;
+		}
+		.main10 .s9 {
+			color: #f33333;
+			margin-top: 50px;
+			display: block;
+			height: 40px;
+			text-align:center;
+			font-size: 12px;
+		}
+		.main10 .s10 {
+			color: #829ff3;
+			margin-top: 50px;
+			display: block;
+			height: 40px;
+			text-align:center;
+			font-size: 12px;
+		}
+		.main10 b {
+			text-align: center;
+			font-size: 18px;
+			display: block;
+			height: 33px;
+		}
+		.main10 .p3 {
+			height: 50px;
+			text-align: center;
+			color: #ccc;
+			font-size: 12px;
+		}
+		.main10 .p4 {
+			text-align: center;
+			font-size: 14px;
+			color: #333;
+		}
+		/*-----------main10 end------*/
+		.main11 {
+			padding-bottom: 59px;
+		}
+		.main11 h4 {
+			height: 43px;
+			font-size: 22px;
+			color: #333;
+			font-weight: 500;
+		}
+		.main11 ul li {
+			width: 296px;
+			height: 285px;
+			float: left;
+			background: #fff;
+			margin-right: 14px;
+		}
+		.main11 ul li:last-child {
+			margin-right: 0;
+		}
+		.main11 li .d17 {
+			width: 296px;
+			height: 179px;
+			background: url(images/61.png) no-repeat;
+			background-size: 100%;
+		}
+		.main11 li .d18 {
+			width: 296px;
+			height: 179px;
+			background: url(images/62.png) no-repeat;
+			background-size: 100%;
+		}
+		.main11 li .d19 {
+			width: 296px;
+			height: 179px;
+			background: url(images/63.png) no-repeat;
+			background-size: 100%;
+		}
+		.main11 li .d20 {
+			width: 296px;
+			height: 179px;
+			background: url(images/64.png) no-repeat;
+			background-size: 100%;
+		}
+		.main11 li .p5 {
+			margin-top: 32px;
+			font-size: 14px;
+			line-height: 14px;
+			color: #333;
+			text-align: center;
+		}
+		.main11 li .p6 {
+			margin-top: 15px;
+			font-size: 12px;
+			color: #ccc;
+			text-align: center;
+		}
+		/*main11 end*/
+		.footer {
+			background: #fff;
+		}
+		.d21 {
+			display: flex;
+			width: 1226px;
+			height: 80px;
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 39px;
+		}
+		.d21 div {
+			flex: 1;
+			text-align: center;
+			line-height: 80px;
+			cursor:pointer;
+			color: #666;
+		}
+		.d21 div:hover i{
+			color: orange;
+		} 
+		.d21 div:hover span{
+			color: orange;
+		} 
+		dl {
+			width: 160px;
+			height: 186px;
+			float: left;
+			position: relative;
+		}
+		dl dt {
+			font-size: 14px;
+			line-height: 14px;
+			color: #333;
+			margin-bottom: 12px;
+		}
+		dl dd {
+			font-size: 12px;
+			color: #888;
+			line-height: 29px;
+		}
+		dl dt:hover {
+			cursor: pointer;
+			color: #f10215;
+		}
+		dl dd:hover {
+			cursor: pointer;
+			color: #f10215;
+		}
+		dl:nth-child(6)::after{
+			position: absolute;
+			top: 0;
+			left: 320px;
+			content: "";
+			display: inline-block;
+			height: 112px;
+			width: 1px;
+			background: #999;
+			/*margin-left: 2px;*/
+		}
+		.d22 {
+			float: right;
+			width: 205px;
+			height: 114px;
+			background: url(images/65.png) no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<div class="header clearfix">
+		<div class="w">
+			<div class="d1 fl">
+				<a href="#">小米商城</a>
+				<span>|</span>
+				<a href="#">MIULI</a>
+				<span>|</span>
+				<a href="#">loT</a>
+				<span>|</span>
+				<a href="#">云服务</a>
+				<span>|</span>
+				<a href="#">金融</a>
+				<span>|</span>
+				<a href="#">有品</a>
+				<span>|</span>
+				<a href="#">小爱开放平台</a>
+				<span>|</span>
+				<a href="#">政企服务</a>
+				<span>|</span>
+				<a href="#">资质证照</a>
+				<span>|</span>
+				<a href="#">协议规则</a>
+				<span>|</span>
+				<a href="#">下载app</a>
+				<span>|</span>
+				<a href="#">SelectRegion</a>
+			</div>
+			<div class="d3 fr">
+				<i class="iconfont icon-qicheqianlian-1"></i>
+				<span>购物车(0)</span>
+			</div>
+			<div class="d2 fr">
+				<a href="#">登录</a>
+				<span>|</span>
+				<a href="#">注册</a>
+				<span>|</span>
+				<a href="#">消息通知</a>
+			</div>
+		</div>
+	</div>
+	<!-- header end -->
+	<div class="nav clearfix">
+		<div class="w">
+			<h1>小米官网</h1>
+			<a href="#" style="margin-left: 188px">小米手机</a>
+			<a href="#">红米</a>
+			<a href="#">电视</a>
+			<a href="#">笔记本</a>
+			<a href="#">家电</a>
+			<a href="#">新品</a>
+			<a href="#">路由器</a>
+			<a href="#">智能硬件</a>
+			<a href="#">服务</a>
+			<a href="#">社区</a>
+			<div class="d4 fr">
+				<input type="text" name="">
+				<input type="button" value="">
+			</div>
+		</div>
+	</div>
+	<!-- nav end -->
+	<div class="banner clearfix">
+		<div class="box">
+			<div class="d5 fl">
+				<ul>
+					<li>
+						<a href="#">手机电话卡</a><span>></span>
+						<div class="d9">1</div>
+					</li>
+					<li>
+						<a href="#">电视盒子</a><span>></span>
+						<div class="d9">2</div>
+					</li>
+					<li>
+						<a href="#">笔记本平板</a><span>></span>
+						<div class="d9">3</div>
+					</li>
+					<li>
+						<a href="#">家电 插线板</a><span>></span>
+						<div class="d9">4</div>
+					</li>
+					<li>
+						<a href="#">出行穿戴</a><span>></span>
+						<div class="d9">5</div>
+					</li>
+					<li>
+						<a href="#">智能路由器</a><span>></span>
+						<div class="d9">6</div>
+					</li>
+					<li>
+						<a href="#">电源配件</a><span>></span>
+						<div class="d9">7</div>
+					</li>
+					<li>
+						<a href="#">健康 儿童</a><span>></span>
+						<div class="d9">8</div>
+					</li>
+					<li>
+						<a href="#">耳机音箱</a><span>></span>
+						<div class="d9">9</div>
+					</li>
+					<li>
+						<a href="#">生活箱包</a><span>></span>
+						<div class="d9">10</div>
+					</li>
+				</ul>
+			</div>
+			<div class="d6 fl">
+				<div class="xiangkuang">
+					<ul>
+						<li>
+							<!-- <img src="images/2.jpg" height="460" width="992"> -->
+						</li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- banner end -->
+	<div class="main1 clearfix">
+		<div class="w">
+			<div class="m1">
+				<div class="m11">
+					<ul>
+						<li>
+							<i></i>
+							<span>选购手机</span>
+						</li>
+						<li>
+							<i></i>
+							<span>企业团购</span>
+						</li>
+						<li>
+							<i></i>
+							<span>F码通道</span>
+						</li>
+						<li>
+							<i></i>
+							<span>米粉卡</span>
+						</li>
+						<li>
+							<i></i>
+							<span>以旧换新</span>
+						</li>
+						<li>
+							<i></i>
+							<span>话费充值</span>
+						</li>
+					</ul>
+				</div>
+				<div class="m12"></div>
+				<div class="m13"></div>
+				<div class="m14"></div>
+			</div>
+		</div>
+	</div>
+	<!-- main1 end -->
+	<div class="main2 clearfix">
+		<div class="w">
+			<div class="main2tu"></div>
+		</div>
+		</div>
+	<!-- main2 end -->
+	<div class="main3 clearfix">
+		<div class="w">
+			<h4>手机</h4>
+			<div class="d7">
+				<div class="d8"></div>
+				<div class="d10">
+				<ul class="u1">
+					<li>
+						<img src="images/14.png" width="240" height="172">
+						<b>小米9 6GB+128GB</b>
+						<p>晓龙855，索尼4800万超广角微距三摄</p>
+						<span>￥2999元</span>
+						<div class="d8-d">新品</div>
+					</li>
+					<li>
+						<img src="images/15.png" width="242" height="172">
+						<b>小米9SE 6GB+128GB</b>
+						<p>索尼4800万超广角三摄，晓龙712</p>
+						<span>￥1999元</span>
+						<div class="d8-d">新品</div>
+					</li>
+					<li>
+						<img src="images/16.png" width="240" height="172">
+						<b>Redmi Note73GB+32G</b>
+						<p>4800万拍照千元，18个月超长质保</p>
+						<span>￥999元</span>
+						<div class="d8-d">新品</div>
+					</li>
+					<li>
+						<img src="images/17.png" width="240" height="170">
+						<b>小米Play 4GB+64GB</b>
+						<p>5.84"小水滴全面屏，后置1200万AI</p>
+						<span>￥1099元</span>
+						<div class="d8-d">新品</div>
+					</li>
+				</ul>
+				<ul class="u2">
+					<li>
+						<img src="images/18.jpg" width="160" height="160">
+						<b>小米8青春版6GB+64GB</b>
+						<p>潮流镜面渐变色，2400万自拍旗舰</p>
+						<span>￥1499元</span>
+						<div class="d8-d">新品</div>
+					</li>
+					<li>
+						<img src="images/19.jpg" width="160" height="160">
+						<b>小米8青春版6GB+64GB</b>
+						<p>索尼4800万超广角三摄，晓龙712</p>
+						<span>￥1599元</span>
+						<div class="d8-d">新品</div>
+					</li>
+					<li>
+						<img src="images/20.jpg" width="160" height="160">
+						<b>小米6x 6GB+128GB</b>
+						<p>轻薄美观的拍照手机</p>
+						<span>￥1549元</span>
+						<div class="d8-d">新品</div>
+					</li>
+					<li>
+						<img src="images/21.jpg" width="160" height="160">
+						<b>红米6A 2GB+16GB</b>
+						<p>12mm高性能处理器，1300万高清相机</p>
+						<span>￥549元</span>
+						<div class="d8-d">新品</div>
+					</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- main3 end -->
+	<div class="main4 clearfix">
+		<div class="w">
+			<img src="images/22.png">
+			<h4>家电</h4>
+			<div class="d11">
+				<ul class="u3">
+					<li>
+						<img src="images/23.png" width="234" height="302">
+					</li>
+					<li>
+						<img src="images/24.jpg" width="150" height="150">
+						<b>米家互联网洗烘一体机10kg</b>
+						<span>2499元</span>
+					</li>
+					<li>
+						<img src="images/25.jpg" width="150" height="150">
+						<b>米家互联网空调</b>
+						<span>1999元</span>
+					</li>
+					<li>
+						<img src="images/26.jpg" width="150" height="150">
+						<b>15.6"笔记本i54GMX110</b>
+						<span>4199元</span>
+					</li>
+					<li>
+						<img src="images/27.png" width="150" height="150">
+						<b>13.3小米笔记本Air 四核i78G2...</b>
+						<span>99元</span>
+					</li>
+				</ul>
+				<ul class="u4">
+					<li>
+						<img src="images/31.png">
+					</li>
+					<li>
+						<img src="images/28.png" width="150" height="150">
+						<b>米家空气净化器</b>
+						<span>1499</span>
+					</li>
+					<li>
+						<img src="images/29.png" width="150" height="150">
+						<b>米家电水壶</b>
+						<span>99元</span>
+					</li>
+					<li>
+						<img src="images/30.jpg" width="150" height="150">
+						<b>米家LED吸顶灯</b>
+						<span></span>
+					</li>
+					<li>
+						<div class="d12">
+							<div class="d14">
+								<span>小米净水器</span>
+								<span>1999元</span>
+							</div>
+							<div class="d15">
+								<img src="images/32.png">
+							</div>
+						</div>
+						<div class="d13">
+							<div class="d14">
+								<span class="s1">浏览更多</span>
+								<span class="s2">热门</span>
+							</div>
+							<div class="d15">
+								<img src="images/33.png">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		<div class="main4 clearfix">
+		<div class="w">
+			<img src="images/44.jpg" width="1226" height="121">
+			<h4>家电</h4>
+			<div class="d11">
+				<ul class="u3">
+					<li>
+						<img src="images/34.jpg" width="234" height="302">
+					</li>
+					<li>
+						<img src="images/35.png" width="150" height="150">
+						<b>米家互联网洗烘一体机10kg</b>
+						<span>2499元</span>
+					</li>
+					<li>
+						<img src="images/36.png" width="150" height="150">
+						<b>米家互联网空调</b>
+						<span>1999元</span>
+					</li>
+					<li>
+						<img src="images/37.jpg" width="150" height="150">
+						<b>15.6"笔记本i54GMX110</b>
+						<span>4199元</span>
+					</li>
+					<li>
+						<img src="images/38.jpg" width="150" height="150">
+						<b>13.3小米笔记本Air 四核i78G2...</b>
+						<span>99元</span>
+					</li>
+				</ul>
+				<ul class="u4">
+					<li>
+						<img src="images/39.jpg" width="234" height="302">
+					</li>
+					<li>
+						<img src="images/40.jpg" width="150" height="150">
+						<b>米家空气净化器</b>
+						<span>1499</span>
+					</li>
+					<li>
+						<img src="images/41.jpg" width="150" height="150">
+						<b>米家电水壶</b>
+						<span>99元</span>
+					</li>
+					<li>
+						<img src="images/42.jpg" width="150" height="150">
+						<b>米家LED吸顶灯</b>
+						<span></span>
+					</li>
+					<li>
+						<div class="d12">
+							<div class="d14">
+								<span>小米净水器</span>
+								<span>1999元</span>
+							</div>
+							<div class="d15">
+								<img src="images/32.png">
+							</div>
+						</div>
+						<div class="d13">
+							<div class="d14">
+								<span class="s1">浏览更多</span>
+								<span class="s2">热门</span>
+							</div>
+							<div class="d15">
+								<img src="images/33.png">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	<div class="main4 clearfix">
+		<div class="w">
+			<img src="images/45.jpg" width="1226" height="121">
+			<h4>家电</h4>
+			<div class="d11">
+				<ul class="u3">
+					<li>
+						<img src="images/23.png" width="234" height="302">
+					</li>
+					<li>
+						<img src="images/24.jpg" width="150" height="150">
+						<b>米家互联网洗烘一体机10kg</b>
+						<span>2499元</span>
+					</li>
+					<li>
+						<img src="images/25.jpg" width="150" height="150">
+						<b>米家互联网空调</b>
+						<span>1999元</span>
+					</li>
+					<li>
+						<img src="images/26.jpg" width="150" height="150">
+						<b>15.6"笔记本i54GMX110</b>
+						<span>4199元</span>
+					</li>
+					<li>
+						<img src="images/27.png" width="150" height="150">
+						<b>13.3小米笔记本Air 四核i78G2...</b>
+						<span>99元</span>
+					</li>
+				</ul>
+				<ul class="u4">
+					<li>
+						<img src="images/31.png">
+					</li>
+					<li>
+						<img src="images/28.png" width="150" height="150">
+						<b>米家空气净化器</b>
+						<span>1499</span>
+					</li>
+					<li>
+						<img src="images/29.png" width="150" height="150">
+						<b>米家电水壶</b>
+						<span>99元</span>
+					</li>
+					<li>
+						<img src="images/30.jpg" width="150" height="150">
+						<b>米家LED吸顶灯</b>
+						<span></span>
+					</li>
+					<li>
+						<div class="d12">
+							<div class="d14">
+								<span>小米净水器</span>
+								<span>1999元</span>
+							</div>
+							<div class="d15">
+								<img src="images/32.png">
+							</div>
+						</div>
+						<div class="d13">
+							<div class="d14">
+								<span class="s1">浏览更多</span>
+								<span class="s2">热门</span>
+							</div>
+							<div class="d15">
+								<img src="images/33.png">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	<div class="main4 clearfix">
+		<div class="w">
+			<img src="images/46.jpg"  width="1226" height="121">
+			<h4>家电</h4>
+			<div class="d11">
+				<ul class="u3">
+					<li>
+						<img src="images/23.png" width="234" height="302">
+					</li>
+					<li>
+						<img src="images/24.jpg" width="150" height="150">
+						<b>米家互联网洗烘一体机10kg</b>
+						<span>2499元</span>
+					</li>
+					<li>
+						<img src="images/25.jpg" width="150" height="150">
+						<b>米家互联网空调</b>
+						<span>1999元</span>
+					</li>
+					<li>
+						<img src="images/26.jpg" width="150" height="150">
+						<b>15.6"笔记本i54GMX110</b>
+						<span>4199元</span>
+					</li>
+					<li>
+						<img src="images/27.png" width="150" height="150">
+						<b>13.3小米笔记本Air 四核i78G2...</b>
+						<span>99元</span>
+					</li>
+				</ul>
+				<ul class="u4">
+					<li>
+						<img src="images/31.png">
+					</li>
+					<li>
+						<img src="images/28.png" width="150" height="150">
+						<b>米家空气净化器</b>
+						<span>1499</span>
+					</li>
+					<li>
+						<img src="images/29.png" width="150" height="150">
+						<b>米家电水壶</b>
+						<span>99元</span>
+					</li>
+					<li>
+						<img src="images/30.jpg" width="150" height="150">
+						<b>米家LED吸顶灯</b>
+						<span>99元</span>
+					</li>
+					<li>
+						<div class="d12">
+							<div class="d14">
+								<span>小米净水器</span>
+								<span>1999元</span>
+							</div>
+							<div class="d15">
+								<img src="images/32.png">
+							</div>
+						</div>
+						<div class="d13">
+							<div class="d14">
+								<span class="s1">浏览更多</span>
+								<span class="s2">热门</span>
+							</div>
+							<div class="d15">
+								<img src="images/33.png">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	<div class="main4 clearfix">
+		<div class="w">
+			<img src="images/47.jpg" width="1226" height="121">
+			<h4>家电</h4>
+			<div class="d11">
+				<ul class="u3">
+					<li>
+						<img src="images/34.jpg" width="234" height="302">
+					</li>
+					<li>
+						<img src="images/35.png" width="150" height="150">
+						<b>米家互联网洗烘一体机10kg</b>
+						<span>2499元</span>
+					</li>
+					<li>
+						<img src="images/36.png" width="150" height="150">
+						<b>米家互联网空调</b>
+						<span>1999元</span>
+					</li>
+					<li>
+						<img src="images/37.jpg" width="150" height="150">
+						<b>15.6"笔记本i54GMX110</b>
+						<span>4199元</span>
+					</li>
+					<li>
+						<img src="images/38.jpg" width="150" height="150">
+						<b>13.3小米笔记本Air 四核i78G2...</b>
+						<span>99元</span>
+					</li>
+				</ul>
+				<ul class="u4">
+					<li>
+						<img src="images/39.jpg" width="234" height="302">
+					</li>
+					<li>
+						<img src="images/40.jpg" width="150" height="150">
+						<b>米家空气净化器</b>
+						<span>1499</span>
+					</li>
+					<li>
+						<img src="images/41.jpg" width="150" height="150">
+						<b>米家电水壶</b>
+						<span>99元</span>
+					</li>
+					<li>
+						<img src="images/42.jpg" width="150" height="150">
+						<b>米家LED吸顶灯</b>
+						<span>99元</span>
+					</li>
+					<li>
+						<div class="d12">
+							<div class="d14">
+								<span>小米净水器</span>
+								<span>1999元</span>
+							</div>
+							<div class="d15">
+								<img src="images/32.png">
+							</div>
+						</div>
+						<div class="d13">
+							<div class="d14">
+								<span class="s1">浏览更多</span>
+								<span class="s2">热门</span>
+							</div>
+							<div class="d15">
+								<img src="images/33.png">
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+	<!-- main4,5,6,7end -->
+	<div class="main8 clearfix">
+		<div class="w">
+			<h4>为你推荐</h4>
+			<ul>
+				<li>
+					<img src="images/48.png">
+					<p>小米电视4 65英寸全面屏旗...</p>
+					<span class="s3">5999元</span>
+					<span class="s4">288人好评</span>
+				</li>
+				<li>
+					<img src="images/49.png">
+					<p>小米水质TDS检测笔</p>
+					<span class="s3">39元</span>
+					<span class="s4">5.9万人好评</span>
+				</li>
+				<li>
+					<img src="images/50.png">
+					<p>小米无限充电器(通用快充...</p>
+					<span class="s3">69元</span>
+					<span class="s4">5858人好评</span>
+				</li>
+				<li>
+					<img src="images/51.png">
+					<p>小米移动电源高配版(10000...</p>
+					<span class="s3">129元</span>
+					<span class="s4">2人好评</span>
+				</li>
+				<li>
+					<img src="images/52.png">
+					<p>知吾煮鸳鸯锅</p>
+					<span class="s3">169元</span>
+					<span class="s4">578人好评</span>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<!-- main8 -->
+		<!-- main8 end -->
+	<div class="main9 clearfix">
+		<div class="w">
+			<h4>热评产品</h4>
+			<ul>
+				<li>
+					<img src="images/53.png">
+					<p class="p2">包装很让人感动，样式也很可爱，做出<br>的饭全家人都爱吃，超爱五星！手机控<br>制还是不太熟练，最主要是没有连接水水</p>
+					<p class="p1">来自于HZG的评价</p>
+					<span class="s5">米家压力lH电饭煲</span><span class="s6">799元</span>
+
+				</li>
+				<li>
+					<img src="images/54.png">
+					<p class="p2">外形简洁大方，大爱小米！全家人都在<br>用小米的产品，真心不错，最主要的是<br>性价比高。附图，给客服妹子一个大大的微笑</p>
+					<p class="p1">来自于HZG的评价</p>
+					<span class="s5">米家压力lH电饭煲</span><span class="s6">599元</span>
+
+				</li>
+				<li>
+					<img src="images/55.png">
+					<p class="p2">包装很让人感动，式样也很可爱，做出<br>的饭全家人都爱吃，超爱五星！手机控<br>制还是不太熟练，最主要是没有连接...</p>
+					<p class="p1">来自于HZG的评价</p>
+					<span class="s5">米家压力lH电饭煲</span><span class="s6">199元</span>
+
+				</li>
+				<li>
+					<img src="images/56.png">
+					<p class="p2">包装很让人感动，样式也很可爱，做出<br>的饭全家人都爱吃，超爱五星！手机控<br>制还是不太熟练，最主要是没有连接水水</p>
+					<p class="p1">来自于HZG的评价</p>
+					<span class="s5">米家压力lH电饭煲</span><span class="s6">22元</span>
+
+				</li>
+			</ul>
+		</div>
+		</div>
+		<!-- main9 end -->
+	<div class="main10 clearfix">
+		<div class="w">
+			<h4>内容</h4>
+			<ul>
+				<li class="l2">
+					<span class="s7">图书</span>
+					<b>哈利·波特与诅咒的孩子</b>
+					<p class="p3">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！</p>
+					<p class="p4">29.37元</p>
+					<div class="box1">
+						<div class="d16">
+							<ul>
+								<li>
+									<img src="images/57.png">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="l3">
+					<span class="s8">MIUI主题</span>
+					<b>哈利·波特与诅咒的孩子</b>
+					<p class="p3">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！</p>
+					<p class="p4">29.37元</p>
+					<div class="box1">
+						<div class="d16">
+							<ul>
+								<li>
+									<img src="images/58.png">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="l4">
+					<span class="s9">游戏</span>
+					<b>哈利·波特与诅咒的孩子</b>
+					<p class="p3">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！</p>
+					<p class="p4">29.37元</p>
+					<div class="box1">
+						<div class="d16">
+							<ul>
+								<li>
+									<img src="images/59.png">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="l5">
+					<span class="s10">应用</span>
+					<b>哈利·波特与诅咒的孩子</b>
+					<p class="p3">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！</p>
+					<p class="p4">29.37元</p>
+					<div class="box1">
+						<div class="d16">
+							<ul>
+								<li>
+									<img src="images/60.png">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<!-- main10 end -->
+	<div class="main11 clearfix">
+		<div class="w">
+			<h4>视频</h4>
+			<ul>
+				<li>
+					<div class="d17"></div>
+					<p class="p5">王源&小米9全新广告大片</p>
+					<p class="p6">好看又能打！我反正被帅了,Wil You?</p>
+				</li>
+				<li>
+					<div class="d18"></div>
+					<p class="p5">雷军对话王源</p>
+					<p class="p6">聊了3小时，这9个秘密决定公开</p>
+				</li>
+				<li>
+					<div class="d19"></div>
+					<p class="p5">小米MIX3磁力滑盖全面屏</p>
+					<p class="p6">全新滑盖交互体验，不一样的新感觉</p>
+				</li>
+				<li>
+					<div class="d20"></div>
+					<p class="p5">小米MIX3故宫特别版</p>
+					<p class="p6">传承中华国宝艺术之美</p>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<!-- main11 end -->
+	<div class="footer clearfix">
+		<div class="w">
+			<!-- 字体图标还没加 -->
+			<div class="d21">
+				<div>
+					<i></i>
+					<span>预约维修服务</span>
+				</div>
+				<div>
+					<i></i>
+					<span>7天无理由退货</span>
+				</div>
+				<div>
+					<i></i>
+					<span>15天免费发货</span>
+				</div>
+				<div>
+					<i></i>
+					<span>满150元包邮</span>
+				</div>
+				<div>
+					<i></i>
+					<span>520家售后网点</span>
+				</div>
+			</div>
+			<dl>
+				<dt>帮助中心</dt>
+				<dd>账户管理</dd>
+				<dd>购物指南</dd>
+				<dd>订单操作</dd>
+			</dl>
+			<dl>
+				<dt>帮助中心</dt>
+				<dd>账户管理</dd>
+				<dd>购物指南</dd>
+				<dd>订单操作</dd>
+			</dl>
+			<dl>
+				<dt>帮助中心</dt>
+				<dd>账户管理</dd>
+				<dd>购物指南</dd>
+				<dd>订单操作</dd>
+			</dl>
+			<dl>
+				<dt>帮助中心</dt>
+				<dd>账户管理</dd>
+				<dd>购物指南</dd>
+				<dd>订单操作</dd>
+			</dl>
+			<dl>
+				<dt>帮助中心</dt>
+				<dd>账户管理</dd>
+				<dd>购物指南</dd>
+				<dd>订单操作</dd>
+			</dl>
+			<dl>
+				<dt>帮助中心</dt>
+				<dd>账户管理</dd>
+				<dd>购物指南</dd>
+				<dd>订单操作</dd>
+			</dl>
+			<div class="d22"></div>
+		</div>
+	</div>
+</body>
+</html>

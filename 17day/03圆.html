@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			margin:0;
+			padding: 0;
+		}
+		html,body{
+			height: 100%;
+		}
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: black;
+		}
+		section {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			animation: move 1s linear infinite;
+			perspective: 1000px;
+		}
+		section div {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			border: 1px solid orange;
+			transform-style: preserve-3d;
+		}
+		@keyframes move {
+			0% {
+				/*transform-origin: (top,top);*/
+				transform: rotateX(0deg);
+			}
+		/*	50% {
+				transform: rotateX(90deg);
+			}*/
+			100% {
+				transform: rotateX(180deg);
+			}
+		}
+		section div:nth-child(1){
+			transform: rotateY(10deg) ;
+		}
+		section div:nth-child(2){
+			transform: rotateY(20deg);
+		}
+		section div:nth-child(3){
+			transform: rotateY(30deg);
+		}
+		section div:nth-child(4){
+			transform: rotateY(40deg);
+		}
+		section div:nth-child(5){
+			transform: rotateY(50deg);
+		}
+		section div:nth-child(6){
+			transform: rotateY(60deg);
+		}
+		section div:nth-child(7){
+			transform: rotateY(70deg);
+		}
+		section div:nth-child(8){
+			transform: rotateY(80deg);
+		}
+		section div:nth-child(9){
+			transform: rotateY(90deg);
+		}
+		section div:nth-child(10){
+			transform: rotateY(100deg);
+		}
+	</style>
+
+</head>
+<body>
+	<section>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</section>
+</body>
+</html>
